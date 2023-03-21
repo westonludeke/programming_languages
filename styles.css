@@ -1,0 +1,59 @@
+h1, footer {
+  text-align: center;
+  color: white;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgb(91,206,250);
+  background: linear-gradient(90deg, rgba(91,206,250,1) 0%, rgba(245,169,184,1) 66%);
+}
+
+#languages {
+  background: white;
+  padding: 2%;
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description.show-all {
+  overflow: visible;
+  white-space: normal;
+}
+
+.show-more {
+  display: inline-block;
+  background-color: pink;
+  border: none;
+  color: #5B7EFA;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.show-more:hover {
+  background-color: #F302BE;
+}
+
+.show-more:active {
+  background-color: #F302BE;
+  box-shadow: 0 5px #F3028E;
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 600px) {
+  #languages {
+    max-width: 100%;
+  }
+}
